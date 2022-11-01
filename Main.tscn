@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="CubeMesh" id=1]
+
+[sub_resource type="BoxShape" id=2]
+
+[node name="Main" type="Node"]
+
+[node name="Room" type="Spatial" parent="."]
+
+[node name="Floor" type="Spatial" parent="Room"]
+
+[node name="MeshInstance" type="MeshInstance" parent="Room/Floor"]
+transform = Transform( 20, 0, 0, 0, 1, 0, 0, 0, 30, 0, 0, 0 )
+mesh = SubResource( 1 )
+skeleton = NodePath("../..")
+
+[node name="CollisionShape" type="CollisionShape" parent="Room/Floor"]
+shape = SubResource( 2 )
