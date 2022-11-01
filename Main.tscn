@@ -8,7 +8,7 @@
 
 [node name="Room" type="Spatial" parent="."]
 
-[node name="Floor" type="Spatial" parent="Room"]
+[node name="Floor" type="StaticBody" parent="Room"]
 
 [node name="MeshInstance" type="MeshInstance" parent="Room/Floor"]
 transform = Transform( 20, 0, 0, 0, 1, 0, 0, 0, 30, 0, 0, 0 )
