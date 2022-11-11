@@ -7,6 +7,7 @@
 albedo_texture = ExtResource( 2 )
 
 [node name="Armor_01_001" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.257876, 0, 0.713128 )
 
 [node name="RootNode" parent="." index="0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 27.784, 0, -11.478 )
