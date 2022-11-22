@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/mob.glb-a2b4b1f63fdc2cc7247dbc349a3af104.scn"
+path="res://.import/TPose_Character02.fbx-cfbe48c8926bace0de215237bbf10cd9.scn"
 
 [deps]
 
-source_file="res://mob/mob.glb"
-dest_files=[ "res://.import/mob.glb-a2b4b1f63fdc2cc7247dbc349a3af104.scn" ]
+source_file="res://CharacterContent/TPose_Character02.fbx"
+dest_files=[ "res://.import/TPose_Character02.fbx-cfbe48c8926bace0de215237bbf10cd9.scn" ]
 
 [params]
 
