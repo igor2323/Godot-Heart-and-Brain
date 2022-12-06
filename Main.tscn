@@ -9,153 +9,157 @@
 
 [node name="Level" type="Spatial" parent="."]
 
-[node name="Floor" type="Spatial" parent="Level"]
+[node name="Segment1" type="Spatial" parent="Level"]
 
-[node name="Floor_Corner_01_001" parent="Level/Floor" instance=ExtResource( 3 )]
+[node name="Floor_Corner_01_001" parent="Level/Segment1" instance=ExtResource( 3 )]
 
-[node name="Floor_Corner_01_002" parent="Level/Floor" instance=ExtResource( 3 )]
+[node name="WallBrick_Tall_01_001" parent="Level/Segment1" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -16.459, 0.5, -9.435 )
+
+[node name="DoorFrame_02_001" parent="Level/Segment1" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.359, 0.5, 18.961 )
+
+[node name="Door_03_001" parent="Level/Segment1" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -20.341, 0.499, -16.347 )
+
+[node name="Floor_Corner_01_002" parent="Level/Segment1" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.261, 2.5, 30.808 )
+
+[node name="Floor_Corner_01_003" parent="Level/Segment1" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.261, 2.5, 33.307 )
+
+[node name="Segment2" type="Spatial" parent="Level"]
+
+[node name="Floor_Corner_01_002" parent="Level/Segment2" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23.761, 0, 33.308 )
 
-[node name="Floor_Corner_01_003" parent="Level/Floor" instance=ExtResource( 3 )]
+[node name="Floor_Corner_01_003" parent="Level/Segment2" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23.761, 0, 35.808 )
 
-[node name="Floor_Corner_01_004" parent="Level/Floor" instance=ExtResource( 3 )]
+[node name="Floor_Corner_01_004" parent="Level/Segment2" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23.761, 0, 38.308 )
 
-[node name="Floor_Corner_01_013" parent="Level/Floor" instance=ExtResource( 3 )]
+[node name="Floor_Corner_01_013" parent="Level/Segment2" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23.761, 0, 40.81 )
 
-[node name="Floor_Corner_01_007" parent="Level/Floor" instance=ExtResource( 3 )]
+[node name="WallBrick_Tall_01_002" parent="Level/Segment2" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -16.459, 0.5, -6.935 )
+
+[node name="WallBrick_Tall_01_010" parent="Level/Segment2" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -18.958, 0.5, -6.935 )
+
+[node name="WallBrick_Tall_01_011" parent="Level/Segment2" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -18.958, 0.5, -4.436 )
+
+[node name="WallBrick_Tall_01_012" parent="Level/Segment2" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -18.958, 0.5, -1.937 )
+
+[node name="WallBrick_Tall_01_003" parent="Level/Segment2" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -16.459, 0.5, -4.436 )
+
+[node name="WallBrick_Tall_01_005" parent="Level/Segment2" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -16.459, 0.5, -1.937 )
+
+[node name="WallBrick_Tall_01_013" parent="Level/Segment2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.487, 0.5, 29.06 )
+
+[node name="Segment3" type="Spatial" parent="Level"]
+
+[node name="Floor_Corner_01_007" parent="Level/Segment3" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.261, 0, 40.81 )
 
-[node name="Floor_Corner_01_012" parent="Level/Floor" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.261, 0, 40.81 )
-
-[node name="Floor_Corner_01_008" parent="Level/Floor" instance=ExtResource( 3 )]
+[node name="Floor_Corner_01_008" parent="Level/Segment3" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.761, 0, 40.81 )
 
-[node name="Floor_Corner_01_009" parent="Level/Floor" instance=ExtResource( 3 )]
+[node name="WallBrick_Tall_01_006" parent="Level/Segment3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.988, 0.5, 26.561 )
+
+[node name="WallBrick_Tall_01_007" parent="Level/Segment3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.489, 0.5, 26.561 )
+
+[node name="WallBrick_Tall_01_004" parent="Level/Segment3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.988, 0.5, 29.06 )
+
+[node name="Segment4" type="Spatial" parent="Level"]
+
+[node name="Floor_Corner_01_009" parent="Level/Segment4" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.761, 0, 43.31 )
 
-[node name="Floor_Corner_01_010" parent="Level/Floor" instance=ExtResource( 3 )]
+[node name="Floor_Corner_01_010" parent="Level/Segment4" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.761, 0, 45.81 )
 
-[node name="Floor_Corner_01_011" parent="Level/Floor" instance=ExtResource( 3 )]
+[node name="Floor_Corner_01_011" parent="Level/Segment4" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.761, 0, 48.31 )
 
-[node name="Floor_Corner_01_014" parent="Level/Floor" instance=ExtResource( 3 )]
+[node name="WallBrick_Tall_01_015" parent="Level/Segment4" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -11.461, 0.5, 0.562 )
+
+[node name="WallBrick_Tall_01_016" parent="Level/Segment4" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -11.461, 0.5, 3.061 )
+
+[node name="WallBrick_Tall_01_017" parent="Level/Segment4" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -11.461, 0.5, 5.56 )
+
+[node name="WallBrick_Tall_01_018" parent="Level/Segment4" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -11.461, 0.5, 8.059 )
+
+[node name="WallBrick_Tall_01_019" parent="Level/Segment4" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -13.96, 0.5, 8.059 )
+
+[node name="WallBrick_Tall_01_020" parent="Level/Segment4" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -13.96, 0.5, 5.56 )
+
+[node name="WallBrick_Tall_01_021" parent="Level/Segment4" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -13.96, 0.5, 3.061 )
+
+[node name="Segment5" type="Spatial" parent="Level"]
+
+[node name="Floor_Corner_01_014" parent="Level/Segment5" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.761, 0, 40.81 )
 
-[node name="Floor_Corner_01_015" parent="Level/Floor" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.761, 0, 43.31 )
-
-[node name="Floor_Corner_01_016" parent="Level/Floor" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.761, 0, 45.81 )
-
-[node name="Floor_Corner_01_017" parent="Level/Floor" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.761, 0, 48.31 )
-
-[node name="Floor_Corner_01_019" parent="Level/Floor" instance=ExtResource( 3 )]
+[node name="Floor_Corner_01_019" parent="Level/Segment5" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.261, 0, 40.81 )
 
-[node name="Wall" type="Spatial" parent="Level"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
+[node name="WallBrick_Tall_01_014" parent="Level/Segment5" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.986, 0.5, 29.06 )
 
-[node name="WallBrick_Tall_01_001" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -16.459, 0, -9.435 )
+[node name="WallBrick_Tall_01_008" parent="Level/Segment5" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.986, 0.5, 26.561 )
 
-[node name="DoorFrame_02_001" parent="Level/Wall" instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.359, 0, 18.961 )
+[node name="WallBrick_Tall_01_009" parent="Level/Segment5" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.485, 0.5, 26.561 )
 
-[node name="Door_03_001" parent="Level/Wall" instance=ExtResource( 5 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -20.341, -0.001, -16.347 )
+[node name="Segment6" type="Spatial" parent="Level"]
 
-[node name="Floor_Corner_01_001" parent="Level/Wall" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.261, 2, 30.808 )
+[node name="Floor_Corner_01_015" parent="Level/Segment6" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.761, 0, 43.31 )
 
-[node name="Floor_Corner_01_002" parent="Level/Wall" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.261, 2, 33.307 )
+[node name="Floor_Corner_01_016" parent="Level/Segment6" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.761, 0, 45.81 )
 
-[node name="WallBrick_Tall_01_002" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -16.459, 0, -6.935 )
+[node name="Floor_Corner_01_017" parent="Level/Segment6" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.761, 0, 48.31 )
 
-[node name="WallBrick_Tall_01_010" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -18.958, 0, -6.935 )
+[node name="WallBrick_Tall_01_022" parent="Level/Segment6" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -21.4768, 0.5, 3.061 )
 
-[node name="WallBrick_Tall_01_011" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -18.958, 0, -4.436 )
+[node name="WallBrick_Tall_01_023" parent="Level/Segment6" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -21.4768, 0.5, 5.56 )
 
-[node name="WallBrick_Tall_01_012" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -18.958, 0, -1.937 )
+[node name="WallBrick_Tall_01_024" parent="Level/Segment6" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -21.4768, 0.5, 8.059 )
 
-[node name="WallBrick_Tall_01_003" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -16.459, 0, -4.436 )
+[node name="WallBrick_Tall_01_025" parent="Level/Segment6" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -23.9758, 0.5, 8.059 )
 
-[node name="WallBrick_Tall_01_005" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -16.459, 0, -1.937 )
+[node name="WallBrick_Tall_01_026" parent="Level/Segment6" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -23.9758, 0.5, 5.56 )
 
-[node name="WallBrick_Tall_01_015" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -11.461, 0, 0.562 )
+[node name="WallBrick_Tall_01_027" parent="Level/Segment6" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -23.9758, 0.5, 3.061 )
 
-[node name="WallBrick_Tall_01_016" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -11.461, 0, 3.061 )
-
-[node name="WallBrick_Tall_01_017" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -11.461, 0, 5.56 )
-
-[node name="WallBrick_Tall_01_018" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -11.461, 0, 8.059 )
-
-[node name="WallBrick_Tall_01_019" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -13.96, 0, 8.059 )
-
-[node name="WallBrick_Tall_01_020" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -13.96, 0, 5.56 )
-
-[node name="WallBrick_Tall_01_021" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -13.96, 0, 3.061 )
-
-[node name="WallBrick_Tall_01_022" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -21.4768, 0, 3.061 )
-
-[node name="WallBrick_Tall_01_023" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -21.4768, 0, 5.56 )
-
-[node name="WallBrick_Tall_01_024" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -21.4768, 0, 8.059 )
-
-[node name="WallBrick_Tall_01_025" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -23.9758, 0, 8.059 )
-
-[node name="WallBrick_Tall_01_026" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -23.9758, 0, 5.56 )
-
-[node name="WallBrick_Tall_01_027" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -23.9758, 0, 3.061 )
-
-[node name="WallBrick_Tall_01_028" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -23.976, 0, 0.562 )
-
-[node name="WallBrick_Tall_01_004" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.988, 0, 29.06 )
-
-[node name="WallBrick_Tall_01_013" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.487, 0, 29.06 )
-
-[node name="WallBrick_Tall_01_014" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.986, 0, 29.06 )
-
-[node name="WallBrick_Tall_01_006" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.988, 0, 26.561 )
-
-[node name="WallBrick_Tall_01_007" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.489, 0, 26.561 )
-
-[node name="WallBrick_Tall_01_008" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.986, 0, 26.561 )
-
-[node name="WallBrick_Tall_01_009" parent="Level/Wall" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.485, 0, 26.561 )
+[node name="WallBrick_Tall_01_028" parent="Level/Segment6" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -23.976, 0.5, 0.562 )
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( -0.953109, 0.263689, -0.148496, 0.0622666, 0.651065, 0.756464, 0.296152, 0.711746, -0.636955, -9.62285, 13.3277, -5.2517 )
