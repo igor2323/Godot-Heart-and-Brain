@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://LevelContent/FreeContent/M_DungeonCrawler_Blocks_001.material" type="Material" id=1]
 [ext_resource path="res://LevelContent/Textures/Diffuse/BAKE_Blocks_DiffuseMap- 4K.png" type="Texture" id=2]
@@ -25,10 +25,6 @@ surfaces/0 = {
 [sub_resource type="SpatialMaterial" id=3]
 albedo_texture = ExtResource( 2 )
 
-[sub_resource type="Animation" id=4]
-resource_name = "Take 001"
-length = 3.33333
-
 [node name="Floor_Corner_01_001" type="StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23.7606, 0, 30.8082 )
 
@@ -42,6 +38,3 @@ shape = SubResource( 2 )
 transform = Transform( 50, 0, 0, 0, 0, 50, 0, -50, 0, 0, 0, 0 )
 mesh = SubResource( 1 )
 material/0 = SubResource( 3 )
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="RootNode"]
-"anims/Take 001" = SubResource( 4 )
