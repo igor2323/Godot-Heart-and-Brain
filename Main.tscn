@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://PlayerFirst.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Textures/Texture_Doorframe.tscn" type="PackedScene" id=2]
@@ -7,15 +7,32 @@
 [ext_resource path="res://Main.gd" type="Script" id=5]
 
 [sub_resource type="BoxShape" id=1]
+extents = Vector3( 1, 4.61616, 1 )
 
 [sub_resource type="BoxShape" id=2]
-extents = Vector3( 1, 1, 1.25258 )
+extents = Vector3( 1, 4.57025, 1.25258 )
 
 [sub_resource type="BoxShape" id=3]
-extents = Vector3( 1, 1, 1.07423 )
+extents = Vector3( 1, 3.86412, 1.07423 )
 
 [sub_resource type="BoxShape" id=4]
-extents = Vector3( 1.01705, 1, 1 )
+extents = Vector3( 1.01705, 3.74229, 1 )
+
+[sub_resource type="ProceduralSky" id=5]
+
+[sub_resource type="Environment" id=6]
+background_mode = 1
+background_sky = SubResource( 5 )
+background_color = Color( 0.392157, 0.352941, 0.301961, 1 )
+ambient_light_color = Color( 1, 1, 1, 1 )
+fog_color = Color( 1, 0, 0, 1 )
+fog_sun_color = Color( 1, 0, 0.0941176, 1 )
+fog_sun_amount = 0.64
+fog_depth_begin = 49.7
+fog_depth_end = 139.5
+fog_depth_curve = 3.13834
+ssao_radius = 53.71
+ssao_intensity = 128.0
 
 [node name="Main" type="Node"]
 script = ExtResource( 5 )
@@ -427,15 +444,18 @@ collision_layer = 4
 transform = Transform( 3.7, 0, 0, 0, 1, 0, 0, 0, 1.2, 0, 1.599, 10.096 )
 shape = SubResource( 4 )
 
-[node name="Segment6" type="Spatial" parent="Level"]
-
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( -0.70943, 0.561991, -0.425293, 0.0622666, 0.651065, 0.756464, 0.70202, 0.510177, -0.496879, -13.6961, 9.1874, -3.94361 )
-fov = 80.0
+transform = Transform( -0.357325, 0.311646, -0.880452, 2.89769e-09, 0.942688, 0.333675, 0.93398, 0.11923, -0.336846, -13.6961, 4.60964, 1.99148 )
+fov = 47.9
 
 [node name="PlayerFirst" parent="." instance=ExtResource( 1 )]
-transform = Transform( 0.983105, 0, 0.183042, 0, 1, 0, -0.183042, 0, 0.983105, 0, 0.760445, -0.160868 )
+transform = Transform( 0.983105, 0, 0.183042, 0, 1, 0, -0.183042, 0, 0.983105, 0, 4.63296, 0.0369685 )
 collision_mask = 4
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 6 )
 
 [connection signal="body_entered" from="Level/Segment1" to="." method="_on_Segment1_body_entered"]
 [connection signal="body_exited" from="Level/Segment1" to="." method="_on_Segment1_body_exited"]
+[connection signal="body_entered" from="Level/Segment2" to="." method="_on_Segment2_body_entered"]
+[connection signal="body_exited" from="Level/Segment2" to="." method="_on_Segment2_body_exited"]
