@@ -9,10 +9,13 @@
 [sub_resource type="BoxShape" id=1]
 
 [sub_resource type="BoxShape" id=2]
+extents = Vector3( 1, 1, 1.25258 )
 
 [sub_resource type="BoxShape" id=3]
+extents = Vector3( 1, 1, 1.07423 )
 
 [sub_resource type="BoxShape" id=4]
+extents = Vector3( 1.01705, 1, 1 )
 
 [node name="Main" type="Node"]
 script = ExtResource( 5 )
@@ -147,7 +150,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.487, 0.5, 29.06 )
 collision_layer = 4
 
 [node name="CollisionShape" type="CollisionShape" parent="Level/Segment2"]
-transform = Transform( 1.2, 0, 0, 0, 1, 0, 0, 0, 3, 0, 1.55878, 4.39668 )
+transform = Transform( 1.2, 0, 0, 0, 1, 0, 0, 0, 3, 0, 1.55878, 5.09866 )
 shape = SubResource( 2 )
 
 [node name="Floor_Corner_01_015" parent="Level/Segment2" instance=ExtResource( 3 )]
